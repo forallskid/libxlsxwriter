@@ -886,7 +886,7 @@ extern zipFile ZEXPORT zipOpen3(const void *pathname, int append, zipcharpc *glo
 //   }
 //   else
 //     return zipOpen3(pathname, append, globalcomment, NULL);
-}
+// }
 
 // extern zipFile ZEXPORT zipOpen2_64(const void *pathname, int append, zipcharpc *globalcomment, zlib_filefunc64_def *pzlib_filefunc_def)
 // {
@@ -1463,10 +1463,10 @@ local int zip64FlushWriteBuffer(zip64_internal *zi)
 //     return err;
 // }
 
-extern int ZEXPORT zipCloseFileInZipRaw(zipFile file, uLong uncompressed_size, uLong crc32)
-{
-  return zipCloseFileInZipRaw64(file, uncompressed_size, crc32);
-}
+// extern int ZEXPORT zipCloseFileInZipRaw(zipFile file, uLong uncompressed_size, uLong crc32)
+// {
+//   return zipCloseFileInZipRaw64(file, uncompressed_size, crc32);
+// }
 
 // extern int ZEXPORT zipCloseFileInZipRaw64(zipFile file, ZPOS64_T uncompressed_size, uLong crc32) {
 //     zip64_internal* zi;
