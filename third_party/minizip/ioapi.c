@@ -208,24 +208,24 @@ static int ZCALLBACK ferror_file_func(voidpf opaque, voidpf stream) {
     return ret;
 }
 
-void fill_fopen_filefunc(zlib_filefunc_def* pzlib_filefunc_def) {
-    pzlib_filefunc_def->zopen_file = fopen_file_func;
-    pzlib_filefunc_def->zread_file = fread_file_func;
-    pzlib_filefunc_def->zwrite_file = fwrite_file_func;
-    pzlib_filefunc_def->ztell_file = ftell_file_func;
-    pzlib_filefunc_def->zseek_file = fseek_file_func;
-    pzlib_filefunc_def->zclose_file = fclose_file_func;
-    pzlib_filefunc_def->zerror_file = ferror_file_func;
-    pzlib_filefunc_def->opaque = NULL;
-}
+// void fill_fopen_filefunc(zlib_filefunc_def* pzlib_filefunc_def) {
+//     pzlib_filefunc_def->zopen_file = fopen_file_func;
+//     pzlib_filefunc_def->zread_file = fread_file_func;
+//     pzlib_filefunc_def->zwrite_file = fwrite_file_func;
+//     pzlib_filefunc_def->ztell_file = ftell_file_func;
+//     pzlib_filefunc_def->zseek_file = fseek_file_func;
+//     pzlib_filefunc_def->zclose_file = fclose_file_func;
+//     pzlib_filefunc_def->zerror_file = ferror_file_func;
+//     pzlib_filefunc_def->opaque = NULL;
+// }
 
-void fill_fopen64_filefunc(zlib_filefunc64_def* pzlib_filefunc_def) {
-    pzlib_filefunc_def->zopen64_file = fopen64_file_func;
-    pzlib_filefunc_def->zread_file = fread_file_func;
-    pzlib_filefunc_def->zwrite_file = fwrite_file_func;
-    pzlib_filefunc_def->ztell64_file = ftell64_file_func;
-    pzlib_filefunc_def->zseek64_file = fseek64_file_func;
-    pzlib_filefunc_def->zclose_file = fclose_file_func;
-    pzlib_filefunc_def->zerror_file = ferror_file_func;
-    pzlib_filefunc_def->opaque = NULL;
-}
+// void fill_fopen64_filefunc(zlib_filefunc64_def* pzlib_filefunc_def) {
+//     pzlib_filefunc_def->zopen64_file = fopen64_file_func;
+//     pzlib_filefunc_def->zread_file = fread_file_func;
+//     pzlib_filefunc_def->zwrite_file = fwrite_file_func;
+//     pzlib_filefunc_def->ztell64_file = ftell64_file_func;
+//     pzlib_filefunc_def->zseek64_file = fseek64_file_func;
+//     pzlib_filefunc_def->zclose_file = fclose_file_func;
+//     pzlib_filefunc_def->zerror_file = ferror_file_func;
+//     pzlib_filefunc_def->opaque = NULL;
+// }
